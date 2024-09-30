@@ -1,0 +1,7 @@
+INSERT INTO Monumento (id, codigo_pais, nombre_pais, nombre_ciudad, latitud, longitud, nombre, descripcion, imagen) VALUES (1, 'ES', 'España', 'Sevilla', 37.3886, -5.9823, 'La Giralda', 'Torre campanario de la Catedral de Sevilla.', 'https://multimedia.andalucia.org/media/30C5694873514DF5BFE17164EAF1B940/img/B579A6F126DC4746BD78B6A6D189872D/1645546386250La_Giralda8664741778608503601.jpg?responsive');
+
+INSERT INTO Monumento (id, codigo_pais, nombre_pais, nombre_ciudad, latitud, longitud, nombre, descripcion, imagen) VALUES (2, 'FR', 'Francia', 'París', 48.8584, 2.2945, 'Torre Eiffel', 'Monumento emblemático de París.', 'https://cdn-imgix.headout.com/media/images/c90f7eb7a5825e6f5e57a5a62d05399c-25058-BestofParis-EiffelTower-Cruise-Louvre-002.jpg');
+
+INSERT INTO Monumento (id, codigo_pais, nombre_pais, nombre_ciudad, latitud, longitud, nombre, descripcion, imagen) VALUES (3, 'IT', 'Italia', 'Roma', 41.8902, 12.4922, 'Coliseo', 'Antiguo anfiteatro romano.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/800px-Colosseo_2020.jpg');
+
+INSERT INTO Monumento (id, codigo_pais, nombre_pais, nombre_ciudad, latitud, longitud, nombre, descripcion, imagen) VALUES (4, 'US', 'Estados Unidos', 'Nueva York', 40.6892, -74.0445, 'Estatua de la Libertad', 'Símbolo de libertad y democracia.', 'https://historia.nationalgeographic.com.es/medio/2023/10/10/captura-de-pantalla-2023-10-10-a-las-17-32-30_5cfff97a_231010173416_1280x1515.jpg');
