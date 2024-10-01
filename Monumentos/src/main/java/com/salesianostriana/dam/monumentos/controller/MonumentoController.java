@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/monumentos")
@@ -18,7 +19,18 @@ public class MonumentoController {
 
     @GetMapping("/")
     public List<Monumento> obtenerTodosLosMonumentos() {
+
         return monumentoService.mostrarMonumentos();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Monumento> obtenerMonumento(@PathVariable Long id) {
+        Monumento monumento = monumentoService.mostrarMonumentoPorId(id);
+        if (monumento != null) {
+            return new ResponseEntity<>(monumento, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @PostMapping("/")

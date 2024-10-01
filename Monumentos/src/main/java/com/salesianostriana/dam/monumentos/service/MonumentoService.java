@@ -15,11 +15,17 @@ public class MonumentoService {
     private MonumentoRepository monumentoRepository;
 
     public List<Monumento> mostrarMonumentos(){
+
         return monumentoRepository.findAll();
     }
 
     public Monumento guardarMonumento(Monumento monumento){
+
         return monumentoRepository.save(monumento);
+    }
+
+    public Monumento mostrarMonumentoPorId(Long id){
+        return monumentoRepository.findById(id).orElse(null);
     }
 
     public Monumento editarMonumento(Long id, Monumento monumento){
@@ -35,6 +41,7 @@ public class MonumentoService {
     }
 
     public void eliminarMonumento(Long id){
+
         monumentoRepository.deleteById(id);
     }
 
